@@ -1,0 +1,6 @@
+{
+  "$schema": "https://raw.githubusercontent.com/SchemaStore/schemastore/master/src/schemas/json/codeworkspace.json",
+  "name": "Ideation Engine",
+  "ports": [8787],
+  "postCreateCommand": "echo '\n\n🫧 Ideation Engine\n==============\n\n1. Copy .env.example to .dev.vars\n2. Fill in your API keys\n3. Run: npx wrangler dev\n4. Open http://localhost:8787\n\nOr deploy: npx wrangler deploy\n\nSee CLAUDE.md for full documentation.\n'"
+}
