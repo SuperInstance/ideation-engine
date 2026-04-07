@@ -1,6 +1,6 @@
 interface Env { IDEATE_KV: KVNamespace; BYOK_KV: KVNamespace; }
 
-const CSP: Record<string, string> = { 'default-src': "'self'", 'script-src': "'self' 'unsafe-inline' 'unsafe-eval'", 'style-src': "'self' 'unsafe-inline'", 'font-src': "https://fonts.googleapis.com", 'img-src': "'self' data: https:", 'connect-src': "'self' https://api.deepseek.com https://api.siliconflow.com https://api.deepinfra.com https://*" };
+const CSP: Record<string, string> = { 'default-src': "'self'", 'script-src': "'self' 'unsafe-inline' 'unsafe-eval'", 'style-src': "'self' 'unsafe-inline'", 'font-src': "https://fonts.googleapis.com", 'img-src': "'self' data: https:", 'frame-ancestors': "'none'", 'connect-src': "'self' https://api.deepseek.com https://api.siliconflow.com https://api.deepinfra.com https://*" };
 
 function json(data: unknown, s = 200) { return new Response(JSON.stringify(data), { status: s, headers: { 'Content-Type': 'application/json', ...CSP } }); }
 
