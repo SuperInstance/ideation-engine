@@ -1,1 +1,14 @@
-{"name":"ideation-engine","type":"cocapn-vessel","version":"1.0.0","fleet":"https://the-fleet.casey-digennaro.workers.dev","cocapn":"https://cocapn.ai"}
+{
+  "name": "ideation-engine",
+  "type": "cocapn-vessel",
+  "version": "1.0.0",
+  "fleet": "https://the-fleet.casey-digennaro.workers.dev",
+  "cocapn": "https://cocapn.ai",
+  "capabilities": [
+    "multi-model-ideation",
+    "bubble-views",
+    "byok",
+    "session-management",
+    "export"
+  ]
+}
